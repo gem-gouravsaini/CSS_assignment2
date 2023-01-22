@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* rem values are relative to the font-size of the root element (usually the <html> element) */
+        /* 1rem = 16px by default */
+        .rem {
+            font-size: 1rem;
+        }
+
+        /* em values are relative to the font-size of the parent element */
+        /* 1em = the current font-size of the parent element */
+        .em {
+            font-size: 1em;
+        }
+
+        /* vh values are relative to 1% of the height of the viewport */
+        /* 1vh = 1% of the viewport height */
+        .vh {
+            height: 1vh;
+        }
+
+        /* vw values are relative to 1% of the width of the viewport */
+        /* 1vw = 1% of the viewport width */
+        .vw {
+            width: 1vw;
+        }
+
+        /* px values are absolute and fixed */
+        /* 1px = 1/96th of an inch */
+        .px {
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rem">This text is 16px (1rem) in font size.</div>
+    <div class="em">This text is also 16px (1em) in font size, because the parent element has a font-size of 16px.</div>
+    <div class="vh" style="background-color: #CCC">This div is 1% of the viewport height</div>
+    <div class="vw" style="background-color: #CCC">This div is 1% of the viewport width</div>
+    <div class="px">This text is 16px in font size.</div>
+</body>
+
+</html>
