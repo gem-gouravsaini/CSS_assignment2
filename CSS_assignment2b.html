@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* the ">" combinator selects only direct children */
+        /* the following CSS will only apply to the <p> elements that are direct children of <div> */
+        div>p {
+            color: blue;
+        }
+
+        /* the "+" combinator selects only the next sibling */
+        /* the following CSS will only apply to the <p> elements that are immediately after a <h2> */
+        h2+p {
+            color: green;
+        }
+
+        /* the "~" combinator selects all following siblings */
+        /* the following CSS will apply to all <p> elements that come after a <h2> */
+        h2~p {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>This text will be blue, because it is a direct child of
+        <div>.</p>
+            <div>
+                <p>This text will NOT be blue, because it is not a direct child of
+                <div>.</p>
+                </div>
+            </div>
+            <h2>This is an h2</h2>
+            <p>This text will be green, because it is immediately after an h2.</p>
+            <p>This text will be red, because it comes after an h2.</p>
+            <p>This text will also be red, because it comes after an h2.</p>
+</body>
+
+</html>
